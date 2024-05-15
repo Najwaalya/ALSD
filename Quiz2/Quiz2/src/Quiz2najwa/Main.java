@@ -8,9 +8,9 @@ public class Main {
         dll.addFirst(10);
         dll.addFirst(15);
         dll.addFirst(150);
-        dll.print();
+        /*dll.print();
         dll.deleteFirst();
-        dll.print();
+        dll.print();*/
         dll.printFromTail();
         dll.deleteLast();
         dll.print();
@@ -25,14 +25,11 @@ public class Main {
     }
     //No. 3 Kode Genap
     public static void split(DoubleLinkedList dll){
-        //ex: 2,3,4,34,2,3,45,4 (original list)
-        //list 1-> 2,3,4,34
-        //list 2-> 2,3,45,4
         if (dll.isEmpty() || dll.head.n == null) {
             System.out.println("List hanya memiliki kosong atau hanya satu elemen.");
             return;
         }
-        
+
         Node slow = dll.head;
         Node fast = dll.head;
         while (fast != null && fast.n != null && fast.n.n != null) {
@@ -58,4 +55,5 @@ public class Main {
         System.out.print("List 2 -> ");
         list2.print();
     }
+    
 }

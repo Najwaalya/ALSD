@@ -9,7 +9,7 @@ public class Node {
         data=0;
         n = p = null;
     }
-    
+
     Node(int data){
         this.data = data;
         n = p = null;
@@ -20,5 +20,4 @@ public class Node {
         this.n = next;
         this.p = prev;
     }
-    
 }

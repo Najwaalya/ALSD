@@ -60,6 +60,5 @@ public class DoubleLinkedList {
             tmp = tmp.p;
         }
         System.out.println(" ");
-    }
-    
+    } 
 }
